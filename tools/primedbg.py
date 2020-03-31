@@ -1,6 +1,6 @@
 from pwn import *
 
-def p_attach_dbg(io,brk_pts=[],syms={},init_cmd=''):
+def attach_dbg(io,brk_pts=[],syms={},init_cmd=''):
     context.log_level='debug'
     context.terminal=['tmux','splitw','-h']
     
